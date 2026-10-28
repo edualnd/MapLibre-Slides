@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "MapLibre-Slides",
-    "slug": "MapLibre-Slides",
+    "name": "MapLibre Slides",
+    "slug": "maplibre-slides",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ads.maplibreslides"
     },
     "android": {
       "adaptiveIcon": {
@@ -16,10 +17,20 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.ads.maplibreslides"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      "@maplibre/maplibre-react-native",
+      "expo-router"
+    ],
+    "scheme": "maplibreslides",
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
